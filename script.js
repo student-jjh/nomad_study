@@ -1,9 +1,9 @@
-const a = 5;
-const b = 2;
+//const a = 5;
+//const b = 2;
 
-let myName = 'JJH';
+//let myName = 'JJH';
 
-console.log(myName);
+/*console.log(myName);
 console.log(a+b);
 console.log(a * b);
 console.log(a/b);
@@ -13,4 +13,51 @@ console.log("your name is " + myName)
 const amIFat = true;
 console.log(amIFat);
 let something;
-console.log(something)
+console.log(something)*/
+/*
+const dayOfWeek=["mon",'tue',"wed",'thu','fri','sat'];
+console.log(dayOfWeek);
+console.log(dayOfWeek[0]);
+//Add one more day to the array
+dayOfWeek.push("sun");
+console.log(dayOfWeek);
+
+
+const nonsense = [1,2,"hello",true,undefined,null];
+
+console.log(nonsense);*/
+//딕셔너리 형태일까요..? 
+
+/*const player = {
+    name:'nico',
+    points:'10',
+    fat: true,
+};
+player["happy"]=true;
+player.lastname="crazy";
+console.log(player);
+console.log(player.name);*/
+
+//함수 만들기
+function sayHello(Name) {
+    console.log(("Hello my name is " + Name));
+}
+
+sayHello('NICO');
+
+//계산기 만들기
+function plus(a,b){
+    console.log(a+b);
+}
+
+plus(3,5);
+
+const player = {
+    name:'nico',
+    points:'10',
+    fat: true,
+    sayHello : function(){
+        console.log("hi, my name is "+this.name)
+    }
+};
+player.sayHello()
