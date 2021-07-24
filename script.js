@@ -60,4 +60,21 @@ const player = {
         console.log("hi, my name is "+this.name)
     }
 };
-player.sayHello()
+player.sayHello();
+
+//2.9 Recap
+// undifined 는 흔하지 않음
+const cal = {
+    plus : function(a,b){console.log(a+b)},
+    minus : function(a,b){console.log(a-b)},
+    multiple : function(a,b){console.log(a*b)},
+    divide : function(a,b){console.log(a/b)},
+}
+
+//Returns
+const age = 96;
+function calculateAge(ageOfDoreigner) {
+    return ageOfDoreigner+2;
+}
+
+console.log(calculateAge(age));
