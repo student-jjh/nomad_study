@@ -37,7 +37,7 @@ player["happy"]=true;
 player.lastname="crazy";
 console.log(player);
 console.log(player.name);*/
-
+/* 
 //함수 만들기
 function sayHello(Name) {
     console.log(("Hello my name is " + Name));
@@ -76,5 +76,16 @@ const age = 96;
 function calculateAge(ageOfDoreigner) {
     return ageOfDoreigner+2;
 }
+*/
+// if study
+//console.log(calculateAge(age));
+let age = prompt("How old are you?") //자바스크립트를 정지시키고 우리를 기다리게 하는 입력
+//이 이유로 인하여 더이상 prompt 함수를 사용하지 않음
+console.log(typeof age)
 
-console.log(calculateAge(age));
+function ageDrinking(ageOfYou){
+    if (parseInt(ageOfYou)>19) {
+        alert("You can drink")
+    }
+}
+ageDrinking(age)
