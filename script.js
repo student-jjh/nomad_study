@@ -79,13 +79,16 @@ function calculateAge(ageOfDoreigner) {
 */
 // if study
 //console.log(calculateAge(age));
-let age = prompt("How old are you?") //자바스크립트를 정지시키고 우리를 기다리게 하는 입력
+let age = prompt("How old are you?"); //자바스크립트를 정지시키고 우리를 기다리게 하는 입력
 //이 이유로 인하여 더이상 prompt 함수를 사용하지 않음
-console.log(typeof age)
+console.log(typeof age);
 
 function ageDrinking(ageOfYou){
-    if (parseInt(ageOfYou)>19) {
-        alert("You can drink")
-    }
+    if (isNaN(ageOfYou)){
+        alert("wirte a number!"); //숫자를 입력하지 않은 경우
+    } else if (parseInt(ageOfYou)>19 && parseInt(ageOfYou)<50){
+        alert("You can drink"); // 19살보다 많으면 음주 가능!
+    }else{ 
+        alert("You can't drink!")} // 미성년자는 음주 불가능!
 }
-ageDrinking(age)
+ageDrinking(age);
