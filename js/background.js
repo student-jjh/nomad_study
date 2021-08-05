@@ -3,10 +3,11 @@ const images = ['img1.jpg','img2.jpg','img3.jpg','img4.jpg','img5.jpg','img6.jpg
 const chosenImage = images[Math.floor((Math.random()*images.length))];
 
 const bgImage = document.createElement("img");
-
-
+const body = document.body;
+bgImage.id='image';
 bgImage.src = `img/${chosenImage}`
 
+body.backgroundImage=bgImage.src; 
 
 
 document.body.appendChild(bgImage);

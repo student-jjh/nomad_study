@@ -10,6 +10,7 @@
 <body>
     <h2 id ='clock'>00:00:00</h2>
     <form id = "login-form" class ='hidden'>
+        <div>
         <input
             required 
             maxlength="15"
@@ -18,6 +19,7 @@
         />
         
         <input type="submit" value="Log In"/>
+        </div>
     </form>
     <h1 id='greeting' class='hidden'></h1>
     
@@ -25,19 +27,21 @@
         <input type="text" placeholder="write a To Do and Press Enter" required />
     </form>
     <ul id='todo-list'></ul>
+    
+    <script src="js/greeting.js"></script>
+    <script src='js/clock.js'></script>
+    
+    <script src='js/background.js'></script>
+    <script src='js/todo.js'></script>
+    <script src='js/weathers.js'></script>
     <div id = 'quotes'>
         <span></span>
         <span></span>
     </div>
+    <script src='js/quotes.js'></script>
     <div id = 'weather'>
         <span></span>
         <span></span>
     </div>
-    <script src="js/greeting.js"></script>
-    <script src='js/clock.js'></script>
-    <script src='js/quotes.js'></script>
-    <script src='js/background.js'></script>
-    <script src='js/todo.js'></script>
-    <script src='js/weathers.js'></script>
 </body>
 </html> 
