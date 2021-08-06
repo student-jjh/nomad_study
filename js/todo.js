@@ -1,7 +1,7 @@
 const toDoForm = document.getElementById('todo-form');
 const toDoList = document.getElementById('todo-list');
 const toDoInput = toDoForm.querySelector('input');
-
+const allClearButton = document.getElementById('all-clear');
 const TODOS_KEY = 'todos';
 
 
@@ -42,8 +42,17 @@ function paintToDo(newTodoObj){
     li.appendChild(button);
     toDoList.appendChild(li);
 }
-toDoForm.addEventListener("submit",handleToDoSubmit);
+function allClear(){
+    const todoNow=document.getElementById('todo-list');
+    toDos=[];
+    while (todoNow.hasChildNodes()){
+        todoNow.removeChild(todoNow.firstChild);
+    }
 
+
+}
+toDoForm.addEventListener("submit",handleToDoSubmit);
+allClearButton.addEventListener('click',allClear);
 const savedToDos = localStorage.getItem(TODOS_KEY);
 if (savedToDos !== null) {
     const parsedToDos = JSON.parse(savedToDos);

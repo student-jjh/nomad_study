@@ -10,5 +10,4 @@ const body = document.body;
 body.style.backgroundImage=`url(img/${chosenImage})`;
 body.style.backgroundRepeat='no-repeat';
 body.style.backgroundSize='100% 100%';
-body.style.height='100%';
 //document.body.appendChild(bgImage);
