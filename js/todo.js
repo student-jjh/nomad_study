@@ -47,6 +47,7 @@ function allClear(){
     toDos=[];
     while (todoNow.hasChildNodes()){
         todoNow.removeChild(todoNow.firstChild);
+    saveToDos();
     }
 
 
